@@ -3,7 +3,7 @@
 %define devname %mklibname KF6IMAP -d
 
 Name: plasma6-kimap
-Version:	24.01.85
+Version:	24.01.90
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -62,9 +62,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
-%find_lang libkimap5
+%find_lang libkimap6
 
-%files -f libkimap5.lang
+%files -f libkimap6.lang
 %{_datadir}/qlogging-categories6/kimap.categories
 %{_datadir}/qlogging-categories6/kimap.renamecategories
 
