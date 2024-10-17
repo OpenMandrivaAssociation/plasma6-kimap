@@ -20,7 +20,7 @@ Source0:	https://invent.kde.org/pim/kimap/-/archive/%{gitbranch}/kimap-%{gitbran
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/kimap-%{version}.tar.xz
 %endif
 Summary: KDE library for accessing IMAP servers
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake(ECM)
